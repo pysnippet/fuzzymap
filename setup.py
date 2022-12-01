@@ -10,6 +10,14 @@ version = (
     .strip()
 )
 
+if "-" in version:
+    # when not on tag, git describe outputs: "v1.0.0-4-g24a8f40"
+    # pip has gotten strict with version numbers
+    # so change it to: "1.0.0+4.git.g24a8f40"
+    # See: https://peps.python.org/pep-0440/#local-version-segments
+    v, i, s = version.split("-")
+    version = v + "+" + i + ".git." + s
+
 assert "-" not in version
 assert "." in version
 
@@ -21,7 +29,7 @@ setuptools.setup(
     version=version,
     author="Artyom Vancyan",
     author_email="artyom@pysnippet.org",
-    description="",
+    # description="",
     # long_description=long_description,
     # long_description_content_type="text/markdown",
     url="https://github.com/pysnippet/fuzzymap",
