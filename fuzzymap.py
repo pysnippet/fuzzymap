@@ -12,13 +12,15 @@ class FuzzyMap(dict):
     does  not  match  any of the keys by the given ratio, it returns `None`.
     """
 
+    # set the minimum percent of the
+    # diff between the compared keys
     ratio = 60
 
     def closest_key(self, key):
         """Returns the closest key matched by the given ratio"""
 
         if len(self):
-            # Calculate the ratio of each key using fuzzywuzzy
+            # Calculate matching coefficient of each key via fuzz.ratio
             coefficients = {k: fuzz.ratio(k, key) for k in self.keys()}
             matching = max(coefficients, key=lambda k: coefficients[k])
             if coefficients[matching] > self.ratio:
