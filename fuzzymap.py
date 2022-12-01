@@ -1,3 +1,5 @@
+# Copyright (C) 2022  Artyom Vancyan
+# See full copyright notice at __init__.py
 from fuzzywuzzy import fuzz
 
 
