@@ -29,7 +29,7 @@ setuptools.setup(
     version=version,
     author="Artyom Vancyan",
     author_email="artyom@pysnippet.org",
-    # description="",
+    description="Python dictionary with a FUZZY key-matching opportunity",
     # long_description=long_description,
     # long_description_content_type="text/markdown",
     url="https://github.com/pysnippet/fuzzymap",
