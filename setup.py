@@ -21,8 +21,8 @@ if "-" in version:
 assert "-" not in version
 assert "." in version
 
-# with open("README.md", "r", encoding="utf-8") as fp:
-#     long_description = fp.read()
+with open("README.md", "r", encoding="utf-8") as fp:
+    long_description = fp.read()
 
 setuptools.setup(
     name="fuzzymap",
@@ -30,8 +30,8 @@ setuptools.setup(
     author="Artyom Vancyan",
     author_email="artyom@pysnippet.org",
     description="Python dictionary with a FUZZY key-matching opportunity",
-    # long_description=long_description,
-    # long_description_content_type="text/markdown",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     url="https://github.com/pysnippet/fuzzymap",
     packages=setuptools.find_packages(),
     classifiers=[
