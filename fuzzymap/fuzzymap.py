@@ -29,6 +29,11 @@ class FuzzyMap(dict):
                 return matching
         return key
 
+    def get(self, key, default=None):
+        """Invokes the __getitem__ to keep the `FuzzyMap` behavior"""
+
+        return self[key] or default
+
     def __missing__(self, key):
         return super().get(self.closest_key(key))
 
