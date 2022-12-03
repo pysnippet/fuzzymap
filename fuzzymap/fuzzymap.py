@@ -25,7 +25,7 @@ class FuzzyMap(dict):
             # Calculate matching coefficient of each key via fuzz.ratio
             coefficients = {k: fuzz.ratio(k, key) for k in self.keys()}
             matching = max(coefficients, key=lambda k: coefficients[k])
-            if coefficients[matching] > self.ratio:
+            if coefficients[matching] >= self.ratio:
                 return matching
         return key
 
