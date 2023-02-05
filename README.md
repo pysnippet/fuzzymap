@@ -50,9 +50,15 @@ FC" matches are the same. In the above example, the `src2` is defined as `FuzzyM
 and we can get an item corresponding to the key of `src1`. See the below graph demonstrating the associations of
 `FuzzyMap` keys.
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/44609997/205437148-4fb3d7bd-1fe9-4ce8-8321-d7aef9488e37.svg" height="400" />
-</p>
+```mermaid
+graph LR
+    src1team1[Rapid Wien - First Vienna]-->src1coefs1["{'w1': 1.93, 'x': 2.32, 'w2': 7.44}"]
+    src1team2[Al Bourj - Al Nejmeh]-->src1coefs2["{'w1': 26, 'x': 11.5, 'w2': 1.05}"]
+    src2team1[SK Rapid Wien - First Vienna FC]-->src2coefs1["{'w1': 1.97, 'x': 2.3, 'w2': 8.2}"]
+    src2team2[Bourj FC - Nejmeh SC Beirut]-->src2coefs2["{'w1': 32, 'x': 12, 'w2': 1.05}"]
+    src1team1-->src2coefs1
+    src1team2-->src2coefs2
+```
 
 ## License
 
