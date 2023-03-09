@@ -2,6 +2,7 @@
 
 [![PyPI](https://img.shields.io/pypi/v/fuzzymap.svg)](https://pypi.org/project/fuzzymap/)
 [![License](https://img.shields.io/pypi/l/fuzzymap.svg)](https://github.com/pysnippet/fuzzymap/blob/master/LICENSE)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fpysnippet%2Ffuzzymap.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fpysnippet%2Ffuzzymap?ref=badge_shield)
 
 ## What is FuzzyMap?
 
@@ -63,3 +64,6 @@ graph LR
 ## License
 
 Copyright (C) 2022 Artyom Vancyan. [GPLv2](LICENSE)
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fpysnippet%2Ffuzzymap.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fpysnippet%2Ffuzzymap?ref=badge_large)
