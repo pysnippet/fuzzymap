@@ -17,3 +17,4 @@ from .fuzzymap import FuzzyMap
 # 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
 __all__ = ('FuzzyMap',)
+__version__ = '1.0.4'
