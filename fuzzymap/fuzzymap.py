@@ -18,7 +18,7 @@ class FuzzyMap(dict):
     # diff between the compared keys
     ratio = 60
 
-    def closest_key(self, key):
+    def _closest_key(self, key):
         """Returns the closest key matched by the given ratio"""
 
         if len(self):
@@ -35,7 +35,7 @@ class FuzzyMap(dict):
         return self[key] or default
 
     def __missing__(self, key):
-        return super().get(self.closest_key(key))
+        return super().get(self._closest_key(key))
 
     def __setitem__(self, key, value):
-        super().__setitem__(self.closest_key(key), value)
+        super().__setitem__(self._closest_key(key), value)
