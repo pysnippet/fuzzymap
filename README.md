@@ -5,14 +5,12 @@
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fpysnippet%2Ffuzzymap.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fpysnippet%2Ffuzzymap?ref=badge_shield)
 [![Tests](https://github.com/pysnippet/fuzzymap/actions/workflows/tests.yml/badge.svg)](https://github.com/pysnippet/fuzzymap/actions/workflows/tests.yml)
 
-## What is the Fuzzy Map?
-
 The Fuzzy Map is a polymorph Python dictionary that always returns the value of the closest similar key. This kind of
 dictionary returns the value of the exact key if there is such a key. Otherwise, it will return the value of the most
 similar key satisfying the given ratio. The exact mechanism works when setting a new or replacing an old key in the
 dictionary. If the key is not found and does not match any of the keys by the given ratio, it returns none.
 
-## Usage with a real-world example
+## A real-world example
 
 A live data parser collects the coefficients of sports games from different bookmakers at once, and then an analyzer
 tries to find the existing forks. Different bookmakers use different names for the same games. Some of them use the full
